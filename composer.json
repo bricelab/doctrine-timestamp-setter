@@ -2,11 +2,13 @@
     "name": "bricelab/doctrine-timestamp-setter",
     "description": "Timestamp setter for Doctrine entities",
     "type": "library",
+    "homepage": "https://github.com/bricelab/doctrine-timestamp-setter",
+    "keywords": ["doctrine", "timestamp", "createdAt", "updatedAt", "setter"],
     "require": {
         "doctrine/orm": "2.9",
         "doctrine/annotations": "1.13"
     },
-    "license": "MIT Licence",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Bricelab\\Doctrine\\": "src/"
@@ -15,8 +17,10 @@
     "authors": [
         {
             "name": "bricelab",
-            "email": "bricehessou@gmail.com"
+            "email": "bricehessou@gmail.com",
+            "homepage": "https://bricelab.bj",
+            "role": "Maintainer"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
