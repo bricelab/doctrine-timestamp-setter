@@ -64,6 +64,9 @@ trait TimestampSetter
     /**
      * @ORM\PrePersist()
      */
+    #[
+        ORM\PrePersist()
+    ]
     public function setCreatedAtValue(): void
     {
         $this->createdAt = new DateTimeImmutable();
@@ -73,6 +76,10 @@ trait TimestampSetter
      * @ORM\PrePersist()
      * @ORM\PreUpdate()
      */
+    #[
+        ORM\PrePersist(),
+        ORM\PreUpdate()
+    ]
     public function setUpdatedAtValue(): void
     {
         $this->updatedAt = new DateTimeImmutable();
