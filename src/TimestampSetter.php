@@ -6,18 +6,25 @@ namespace Bricelab\Doctrine;
 
 use DateTimeImmutable;
 use DateTimeInterface;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 trait TimestampSetter
 {
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime_immutable")
      */
+    #[
+        ORM\Column(type: Types::DATETIME_IMMUTABLE)
+    ]
     private DateTimeInterface $createdAt;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime_immutable")
      */
+    #[
+        ORM\Column(type: Types::DATETIME_IMMUTABLE)
+    ]
     private DateTimeInterface $updatedAt;
 
     /**

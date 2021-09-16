@@ -5,6 +5,7 @@
     "homepage": "https://github.com/bricelab/doctrine-timestamp-setter",
     "keywords": ["doctrine", "timestamp", "createdAt", "updatedAt", "setter"],
     "require": {
+        "php": ">=8.0",
         "doctrine/orm": "^2.9",
         "doctrine/annotations": "^1.13"
     },
